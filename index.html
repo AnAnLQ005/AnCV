@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Luong Quoc An</title>
+  <link rel="stylesheet" href="/CV_LuongQuocAn/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Existing styles... */
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      padding: 0;
+      margin: 18px 0 0 0;
+    }
+    .contact-icons li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .contact-icons i {
+      font-size: 2.1em;
+      color: #38b6ff;
+      background: #fff;
+      border-radius: 50%;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(56,182,255,0.10);
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .contact-icons a:hover i, .contact-icons i:hover {
+      background: #ffb6d5;
+      color: #fff;
+      transform: translateY(-6px) scale(1.12);
+      box-shadow: 0 4px 16px rgba(255,182,213,0.18);
+    }
+    @media (max-width: 600px) {
+      .contact-icons {
+        gap: 16px;
+      }
+      .contact-icons i {
+        font-size: 1.4em;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="hamburger" aria-label="Mở menu" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <a href="#hero" onclick="closeSidebar()">Trang chủ</a>
+      <a href="#about" onclick="closeSidebar()">Giới thiệu</a>
+      <a href="#career" onclick="closeSidebar()">Mục tiêu</a>
+      <a href="#skills" onclick="closeSidebar()">Sở thích & Kỹ năng</a>
+      <a href="#languages" onclick="closeSidebar()">Ngôn ngữ</a>
+      <a href="#awards" onclick="closeSidebar()">Chứng chỉ/Giải thưởng</a>
+      <a href="#projects" onclick="closeSidebar()">Dự án</a>
+      <a href="#contact" onclick="closeSidebar()">Liên hệ</a>
+      <a href="https://khanguth.github.io/Main-Page/" onclick="closeSidebar()">Quay lại trang chính</a>
+    </nav>
+  </aside>
+  <div class="main-content">
+    <section id="hero" class="hero">
+      <h1>Hi, I'm An</h1>
+      <p>This is my portfolio</p>
+    </section>
+
+    <section id="about">
+      <h2>Giới thiệu bản thân</h2>
+      <div class="about-flex">
+        <img class="avatar" src="/CV_LuongQuocAn/img/avt1.jpg" alt="Avatar Lương Quốc An">
+        <div>
+          <p>Xin chào! Mình là Lương Quốc An, sinh viên ngành Công nghệ Thông tin với có niềm đam mê với việc xây dựng các trang web tương tác, thân thiện với người dùng.</p>
+          <ul>
+            <li><b>Ngày sinh:</b> 01/02/2005</li>
+            <li><b>Giới tính:</b> Nam</li>
+            <li><b>Địa chỉ:</b> TP. Hồ Chí Minh</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="career">
+      <h2>Mục tiêu nghề nghiệp</h2>
+      <p>Trở thành một lập trình viên web chuyên nghiệp, có khả năng xây dựng các ứng dụng web linh hoạt, bảo mật và đáp ứng tốt nhu cầu thực tế của người dùng.</p>
+    </section>
+
+    <section id="skills">
+      <h3>Sở thích</h3>
+      <ul class="interests-list">
+        <li>Vẽ tranh</li>
+        <li>Nghe nhạc</li>
+        <li>Chơi giải đố</li>
+        <li>Du lịch</li>
+      </ul>
+      <h3>Kỹ năng</h3>
+      <ul class="skills-list">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Ngôn ngữ đã học</h2>
+      <ul>
+        <li>Tiếng Việt (Bản ngữ)</li>
+        <li>Tiếng Anh (Giao tiếp trung bình)</li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h2>Chứng chỉ / Giải thưởng</h2>
+      <ul>
+        <li>Chứng chỉ: Không có</li>
+        <li>Giải thưởng: Không có</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Dự án</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Wesbite quản lí sân cầu lông</h3>
+          <p>Xây dựng và phát triển trang web nghe nhạc.</p>
+        </div>
+        <div class="project-card">
+          <h3>Webiste điều trị HIV</h3>
+          <p>Phát triển website chuyên cung cấp các kiến thức, thông tin về bệnh HIV, liên hệ với với các bác sĩ chuyên ngành truyền nhiễm, được hỗ trợ đặt lịch điều trị.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Liên hệ</h2>
+      <ul class="contact-list contact-icons">
+        <li><a href="mailto:luongquocan697@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://github.com/ANANLQ005" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/itou_yuki005?igsh=bjY3cTZkaG54dzR0" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/share/18kKj9Ndf3/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2025 Lương Quốc An. All rights reserved.
+    </footer>
+  </div>
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+    }
+    function closeSidebar() {
+      if(window.innerWidth <= 700) {
+        document.getElementById('sidebar').classList.remove('open');
+      }
+    }
+    document.addEventListener('click', function(e) {
+      const sidebar = document.getElementById('sidebar');
+      const hamburger = document.querySelector('.hamburger');
+      if(window.innerWidth <= 700 && sidebar.classList.contains('open')) {
+        if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+          sidebar.classList.remove('open');
+        }
+      }
+    });
+    window.addEventListener('resize', function() {
+      if(window.innerWidth > 700) {
+        document.getElementById('sidebar').classList.remove('open');
+      }
+    });
+    function revealOnScroll() {
+      const revealEls = document.querySelectorAll('.main-content section, .sidebar, .hero, .project-card');
+      const windowHeight = window.innerHeight;
+      revealEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < windowHeight - 60) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+  </script>
+</body>
+</html>
